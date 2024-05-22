@@ -62,9 +62,9 @@
 @inject('injected','App\Defaults\Custom')
 
 
-<div class="preloader">
-    <div class="preloader__image"></div>
-</div>
+{{--<div class="preloader">--}}
+{{--    <div class="preloader__image"></div>--}}
+{{--</div>--}}
 <!-- /.preloader -->
 
 
@@ -239,6 +239,16 @@
                                 <li><a href="{{url('about')}}">About us</a></li>
                                 <li><a href="{{url('contact')}}">Contact Us</a></li>
                                 <li><a href="{{url('plan')}}">Pricing & Plans</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="footer-widget__column footer-widget-two__explore">
+                            <div class="footer-widget-two__title-box">
+                                <h4 class="footer-widget-two__title">Work Hour</h4>
+                            </div>
+                            <ul class="footer-widget-two__explore-list list-unstyled">
+                                <li><a href="#">Mon - Sat: 24/7</a></li>
                             </ul>
                         </div>
                     </div>

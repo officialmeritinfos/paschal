@@ -773,6 +773,64 @@
     <section class="blog-one">
         <div class="container">
             <div class="section-title text-center">
+                <span class="section-title__tagline">Latest Transactions</span>
+                <h2 class="section-title__title">Latest Deposits & Withdrawals</h2>
+            </div>
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="sec-title_title" style="margin-bottom: 3rem;margin-top: 3rem;">Recent Deposits</div>
+                    <table class="table align-middle mb-0 bg-white">
+                        <thead class="bg-light">
+                        <tr>
+                            <th>Name</th>
+                            <th>Amount</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($deposits as $deposit)
+                            @inject('option','App\Defaults\Custom')
+                            <tr>
+                                <td>{{$option->getInvestor($deposit->user)}}</td>
+                                <td>${{number_format($deposit->amount,2)}}</td>
+                            </tr>
+                        @endforeach
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="sec-title_title" style="margin-bottom: 3rem;margin-top: 3rem;">Latest Withdrawals</div>
+                    <table class="table align-middle mb-0 bg-white">
+                        <thead class="bg-light">
+                        <tr>
+                            <th>Name</th>
+                            <th>Amount</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($withdrawals as $withdrawal)
+                            @inject('option','App\Defaults\Custom')
+                            <tr>
+                                <td>{{$option->getInvestor($withdrawal->user)}}</td>
+                                <td>${{number_format($withdrawal->amount,2)}}</td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Blog One End-->
+    <!--Blog One Start-->
+    <section class="blog-one">
+        <div class="container">
+            <div class="section-title text-center">
                 <span class="section-title__tagline">NEWS & UPDATES</span>
                 <h2 class="section-title__title">Latest Blog & Articles</h2>
             </div>
