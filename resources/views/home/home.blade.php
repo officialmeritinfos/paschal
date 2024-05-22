@@ -305,7 +305,7 @@
 
     <!--Video One Start-->
     <section class="video-one">
-        <div class="video-one__bg" style="background-image: url({{asset('home/images/backgrounds/video-one-bg.jpg')}});"></div>
+        <div class="video-one__bg" style="background-image: url({{asset('home/images/backgrounds/')}});"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
