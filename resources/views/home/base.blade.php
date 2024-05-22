@@ -309,12 +309,14 @@
         <ul class="mobile-nav__contact list-unstyled">
             <li>
                 <i class="fa fa-envelope"></i>
-                <a href="mailto:needhelp@packageName__.com">needhelp@corle.com</a>
+                <a href="mailto:{{$web->email}}">{{$web->email}}</a>
             </li>
-            <li>
-                <i class="fa fa-phone-alt"></i>
-                <a href="tel:666-888-0000">666 888 0000</a>
-            </li>
+            @if(!empty($web->phone))
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:{{$web->phone}}">{{$web->phone}}</a>
+                </li>
+            @endif
         </ul><!-- /.mobile-nav__contact -->
         <div class="mobile-nav__top">
             <div class="mobile-nav__social">
