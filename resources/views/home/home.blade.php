@@ -385,8 +385,8 @@
                 <!--Services One Single Start-->
                 <div class="col-xl-12 col-lg-12 wow fadeInUp" data-wow-delay="100ms">
                     <div class="services-one__single text-center">
-                        <a href="{{asset('home/digitalfortunecert.pdf')}}" target="_blank">
-                            <img src="{{asset('home/digitalfortunecert.jpg')}}" style="max-width:400px;"/>
+                        <a href="{{asset('home/certificate.jpeg')}}" target="_blank">
+                            <img src="{{asset('home/certificate.jpeg')}}" style="max-width:400px;"/>
                         </a>
                     </div>
                 </div>

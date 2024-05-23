@@ -68,7 +68,9 @@
 
                 <div class="col-xl-12">
                     <div class="about-one__right text-center">
-
+                        <a href="{{asset('home/certificate.jpeg')}}" target="_blank">
+                            <img src="{{asset('home/certificate.jpeg')}}" style="max-width:400px;"/>
+                        </a>
                     </div>
                 </div>
             </div>
